@@ -10,6 +10,7 @@
 class LiderTecnico : public Empleado {
     public:
     LiderTecnico();
+    virtual ~LiderTecnico()=default;
     float calcularSalario() override;
 
 };

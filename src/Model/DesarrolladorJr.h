@@ -11,6 +11,7 @@
 class DesarrolladorJr : public Empleado {
     public:
     DesarrolladorJr();
+    virtual ~DesarrolladorJr()=default;
     float calcularSalario() override;
 
 };

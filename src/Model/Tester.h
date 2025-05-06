@@ -10,6 +10,7 @@
 class Tester : public Empleado{
 public:
     Tester();
+    virtual ~Tester()=default;
     float calcularSalario() override;
 
 };
