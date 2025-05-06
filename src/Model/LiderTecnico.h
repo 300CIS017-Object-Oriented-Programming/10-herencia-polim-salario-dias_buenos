@@ -4,10 +4,13 @@
 
 #ifndef LIDERTECNICO_H
 #define LIDERTECNICO_H
+#include "Empleado.h"
 
 
-
-class LiderTecnico {
+class LiderTecnico : public Empleado {
+    public:
+    LiderTecnico();
+    float calcularSalario() override;
 
 };
 

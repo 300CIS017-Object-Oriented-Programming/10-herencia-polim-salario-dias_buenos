@@ -5,9 +5,13 @@
 #ifndef DESARROLLADORJR_H
 #define DESARROLLADORJR_H
 
+#include "Empleado.h"
 
 
-class DesarrolladorJr {
+class DesarrolladorJr : public Empleado {
+    public:
+    DesarrolladorJr();
+    float calcularSalario() override;
 
 };
 

@@ -5,9 +5,19 @@
 #ifndef EMPLEADO_H
 #define EMPLEADO_H
 
-
+#include <string>
+#include <iostream>
 
 class Empleado {
+
+protected:
+    float salarioBase;
+    std::string nombre;
+public:
+    Empleado(std::string nombre);
+    virtual float calcularSalario()=0;
+    float getSalarioBase();
+    std::string getNombre();
 
 };
 
