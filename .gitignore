@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Ignorar carpeta de compilación de CLion
+cmake-build-debug/
+
+# Ignorar configuración del entorno de JetBrains
+.idea/

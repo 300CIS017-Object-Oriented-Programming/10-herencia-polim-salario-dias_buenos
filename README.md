@@ -30,3 +30,67 @@ Para solucionar este ejercicio puede tomar como ejemplo lo desarrollado en https
 - Código fuente documentado y subido al repositorio de **GitHub Classroom** correspondiente.
 - Se evaluará el trabajo en clase más que el producto final.
 
+```mermaid
+
+classDiagram
+
+    Empleado <|-- DesarrolladorJr
+    Empleado <|-- DesarrolladorSenior
+    Empleado <|-- LiderTecnico
+    Empleado <|-- Tester
+    Empresa o-- Empleado
+    View --> Empresa
+    Main --> View
+
+    class Empleado {
+        # float salarioBase
+        # string nombreEmpleado
+        + Empleado()
+        + ~Empleado()
+        + float calcularSalario()
+    }
+    
+    class  DesarrolladorJr{
+        +DesarrolladorJr()
+        +~DesarrolladorJr()
+        +float calcularSalario()
+
+    }
+    class  DesarrolladorSenior{
+        +DesarrolladorSenior()
+        +~DesarrolladorSenior()
+        +float calcularSalario()
+
+    }
+    class LiderTecnico{
+        +LiderTecnico()
+        +~LiderTecnico()
+        +float calcularSalario()
+   
+    }
+    class  Tester{
+        +Tester()
+        +~Tester()
+        +float calcularSalario()
+    
+    }
+      class Empresa {
+        - vector<Empleado*> vectorEmpleados
+        + Empleado()
+        + ~Empleado()
+        + void iniciarDatos()
+        + void agregarEmpleado()
+        + void mostrarSalarioEmpleado()
+        + float calcularNominaTotal()
+    }
+    class View {
+        + View()
+        + ~View()
+        + int mostrarMenu()
+    }
+
+
+
+
+```
+
