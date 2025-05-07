@@ -10,7 +10,5 @@ DesarrolladorJr::DesarrolladorJr():Empleado( nombre){
 }
 
 float DesarrolladorJr::calcularSalario() {
-    float salario;
-    salario= salarioBase;
-    return salario;
+    return salarioBase;
 }

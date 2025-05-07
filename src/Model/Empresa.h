@@ -7,7 +7,7 @@
 
 #include <vector>
 #include <iostream>
-#include <Empleado.h>
+#include "Empleado.h"
 #include "DesarrolladorJr.h"
 #include "DesarrolladorSenior.h"
 #include "Tester.h"
@@ -21,8 +21,7 @@ class Empresa {
   public:
      Empresa();
      ~Empresa();
-     void agregarEmpleado(Empleado* empleado);
-     void mostrarEmpleado(Empleado* empleado);
+     void mostrarEmpleado(std::string nombreEmpleado);
      float calcularNominaTotal();
 
 

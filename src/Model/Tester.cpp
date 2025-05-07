@@ -9,7 +9,5 @@ Tester::Tester():Empleado(nombre) {
 }
 
 float Tester::calcularSalario() {
-    float salario;
-    salario=salarioBase*1.05;
-    return salario;
+    return salarioBase*1.05;
 }

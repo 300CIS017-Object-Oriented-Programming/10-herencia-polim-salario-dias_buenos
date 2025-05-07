@@ -10,8 +10,6 @@ DesarrolladorSenior::DesarrolladorSenior():Empleado(nombre) {
 
 
 float DesarrolladorSenior::calcularSalario() {
-    float salario;
-    salario=salarioBase*(1.2);
-    return salario;
+    return salarioBase*(1.2);
 }
 

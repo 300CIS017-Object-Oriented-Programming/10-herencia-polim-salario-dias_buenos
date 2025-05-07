@@ -9,7 +9,5 @@ LiderTecnico::LiderTecnico():Empleado(nombre) {
 }
 
 float LiderTecnico::calcularSalario() {
-    float salario;
-    salario = salarioBase*1,25;
-    return salario;
+    return salarioBase*1,25;
 }

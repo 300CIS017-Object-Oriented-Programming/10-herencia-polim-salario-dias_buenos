@@ -31,32 +31,30 @@ void Empresa::iniciarDatos(){
   }
 
 Empresa::~Empresa(){
-
-}
-
-void Empresa::agregarEmpleado(Empleado* empleado){
-  empleados.push_back(empleado);
-}
-void Empresa::mostrarEmpleado(Empleado* empleado){
   for (int i = 0; i < empleados.size(); i++){
-    if (empleados[i]){
-
+    delete empleados[i];
     }
-
-
-
+}
+void Empresa::mostrarEmpleado(std::string nombreEmpleado){
+  for (int i = 0; i < empleados.size(); i++){
+    if (empleados[i]->getNombre()== nombreEmpleado){
+      std::cout << "Nombre del empleado: " <<nombreEmpleado<<std::endl;
+      std::cout <<"Salario: "<< empleados[i]->calcularSalario()<<std::endl;
+    }
+    else{
+      //Pendiente ponerle el throw y eso
+      std::cout << "El empleado no se encuentra en la base de datos "<<std::endl;
+    }
   }
 
-
-
 }
+
 float Empresa::calcularNominaTotal(){
   float nominaTotal = 0;
   for (int i = 0; i < empleados.size(); i++){
     nominaTotal += empleados[i]->calcularSalario();
-  return nominaTotal;
   }
-
+  return nominaTotal;
 }
 
 
